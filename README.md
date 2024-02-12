@@ -9,6 +9,8 @@ $\mathtt{cuttingPlanes.py}$: This file provides a way to detect FC-families, wit
 $\mathtt{classifyFamiliesWithVerification.py}$: This file implements the Algorithm described in the paper, along with SMT verification of the FC-detection algorithm presented in $\mathtt{cuttingPLanes.py}$.
 
 # Work Flow
+The prerequisite software to run these files is an installation of Gurobi Optimization, SageMath, and pySMT in python 3.
+
 Let $\mathcal{A}$ be a family of sets with $\bigcup \mathcal{A} = [n]$, where $[n] = \{ 1, \dots, n \}$. In the following example, $\mathcal{A}$ is a $\mathtt{set}$ of $\mathtt{frozenset}$ objects in python.
 To exactly determine if $\mathcal{A}$ is FC, run the method $\mathtt{exactCuttingPlanes}(\mathcal{A}, n)$ from $\mathtt{classifyFamiliesWithVerification.py}$. The result is the value of the predicate "$\mathcal{A}$ is an FC-family."
 
